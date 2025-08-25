@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML Form (HTML)</title>
+ 
+</head>
+<body>
+  
+  <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Contact Form</legend>
+
+      <label for="name">Naam:* </label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:* </label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone: </label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+
+      <label for="password">Password:* </label><br>
+      <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+      <label for="gender">Gender: </label><br>
+      <select id="gender" name="gender">
+        <option value="">--Select--</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="dob">Date of Birth: </label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="country">Country: </label><br>
+      <select id="country" name="country">
+        <option value="India">India</option>
+        <option value="USA">United States</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+      <label for="message">Message: </label><br>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+      <label for="resume">Upload file (optional): </label><br>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.png,.jpg, .mp4"><br><br>
+
+      <label>
+        <input type="checkbox" name="agree" required> Terms and conditions se sahmat hoon
+      </label><br><br>
+      <label for="skills"> Skills:</label><br>
+      <input type="checkbox" name="skills" value="HTML"> HTML
+      <input type="checkbox" name="skills" value="CSS"> CSS
+      <input type="checkbox" name="skills" value="Java Script"> Java Script
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+      <p><small>* Mandatory fields</small></p>
+    </fieldset>
+  </form>
+</body>
+</html>
+
