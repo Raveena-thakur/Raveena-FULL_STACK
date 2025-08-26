@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chessboard with Pieces (HTML + CSS)</title>
+  <style>
+    html, body { height: 100%; }
+    body {
+      display: grid;
+      place-items: center;
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    .board {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: min(80vmin, 560px);
+      height: min(80vmin, 560px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.4);
+      border: 10px solid #333;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .board td {
+      width: 12.5%;
+      height: 12.5%;
+      text-align: center;
+      vertical-align: middle;
+      font-size: clamp(16px, 5vmin, 40px);
+      user-select: none;
+    }
+
+    .board tr:nth-child(even) td:nth-child(odd),
+    .board tr:nth-child(odd) td:nth-child(even) {
+      background: #000;
+    }
+
+    .board tr:nth-child(even) td:nth-child(even),
+    .board tr:nth-child(odd) td:nth-child(odd) {
+      background: #fff;
+    }
+
+    .board td:hover { outline: 2px solid rgba(255,255,0,.4); outline-offset: -2px; }
+  </style>
+</head>
+<body>
+  <table class="board" aria-label="Chessboard with pieces">
+    <tbody>
+      <!-- Black pieces -->
+      <tr>
+        <td>♜</td><td>♞</td><td>♝</td><td>♛</td><td>♚</td><td>♝</td><td>♞</td><td>♜</td>
+      </tr>
+      <tr>
+        <td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td><td>♟</td>
+      </tr>
+
+      <!-- Empty middle rows -->
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+
+      <!-- White pieces -->
+      <tr>
+        <td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td><td>♙</td>
+      </tr>
+      <tr>
+        <td>♖</td><td>♘</td><td>♗</td><td>♕</td><td>♔</td><td>♗</td><td>♘</td><td>♖</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
