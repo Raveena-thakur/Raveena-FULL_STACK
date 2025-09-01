@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivam's Dhabha</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #663b3b;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+    }
+    nav a {
+      margin: 10px 0;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    h1 { 
+      color: #333; 
+      background-color: rgb(136, 80, 182);
+      text-align: center;
+      padding: 10px;
+    }
+
+    h2 { color: #555; }
+    h3 { color: #333; margin-top: 0; }
+    p  { color: #666; margin: 5px 0; }
+
+    .dishes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .dish-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .dish-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="">Home</a>
+    <a href="">Starters</a>
+    <a href="">Main course</a>
+    <a href="">Contact</a>
+  </nav>
+
+  <div class="content">
+    <h1>Shivam's Dhaba</h1>
+    <h2>Menu</h2>
+    <h2>Our Specials</h2>
+
+    <div class="dishes">
+      <div class="dish-box">
+        <h3>Margherita Pizza</h3>
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=481&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <p>Classic pizza with fresh cheese</p>
+      </div>
+
+      <div class="dish-box">
+        <h3>Paneer Butter Masala</h3>
+        <img src="https://i0.wp.com/aartimadan.com/wp-content/uploads/2023/11/Paneer-Butter-Masala-Restaurant-Style.jpg?fit=800%2C449&ssl=1">
+        <p>Rich creamy curry with paneer</p>
+      </div>
+
+      <div class="dish-box">
+        <h3>Dal Tadka</h3>
+        <img src="https://cinnamonsnail.com/wp-content/uploads/2023/04/Arhar-Dal-Feature-1-of-1.jpg">
+        <p>Traditional lentils tempered with spices</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
